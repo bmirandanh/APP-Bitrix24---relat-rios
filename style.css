@@ -1,0 +1,73 @@
+#col {
+	display: none;
+}
+#date{
+	text-align: center;
+	outline: 7px inset #1C6EA4;
+	outline-offset: 0px;
+	background-color: #636363;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+	box-shadow: 5px 5px 15px 5px #000000;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 16.px;
+	letter-spacing: -0.4px;
+	word-spacing: 0.6px;
+	color: #19FFD9;
+	font-weight: 700;
+	text-decoration: none solid rgb(68, 68, 68);
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-shadow: 2px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+	width:650px;
+}
+
+#start{
+		border: none;
+		background: #404040;
+		color: #ffffff !important;
+		font-weight: 100;
+		padding: 20px;
+		text-transform: uppercase;
+		border-radius: 6px;
+		display: inline-block;
+		transition: all 0.3s ease 0s;
+	}
+.hover:hover:enabled{
+
+	color: #33FFFF !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
+#start[disabled=disabled], #start:disabled {
+	border: none;
+	background: #3a3b3a;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+
+#connection{
+	margin-left: 20dp;
+	color: #33FFFF ;
+}
+#chk {
+	margin-left: 20dp;
+	color: #33DDFF;
+}
+div {color: #E6FFF2;}
+
+img {
+	border: 5px double rgba(28,110,164,0.84);
+	border-radius: 18px 40px 0px 40px;
+}

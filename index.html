@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Generation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts.js" defer></script>
+</head>
+<body>
+<br><br>
+	
+	
+	<div id="date" style="text-align: center" >
+	<p id="warning" style="text-align: center; color: #B3D9FF" ></p>
+	<br><br>
+	  <img src="dutra.jpg" alt="some text" width=140 height=140>
+	  <br><br><br>
+	  <button id = "btfil" onclick="empon()" style="text-align: center; color: #00000" value="1"> Empresa </button>
+	  <button id = "btfil" onclick="colon()" style="text-align: center; color: #00000" value="2"> Colaborador </button>
+		<div id = "emp">	
+			<p>Empresas</p>
+	  <select id="Departamento" name="Departamento">
+			<option value="Todos">Todas as Empresas</option>
+			<option value="Departamento Pessoal">Departamento Pessoal</option>
+			<option value="Dutra Advogados">Dutra Advogados</option>
+			<option value="Dutra Contabilidade">Dutra Contabilidade</option>
+			<option value="Dutra Corporativo">Dutra Corporativo</option>
+			<option value="Dutra Gestão Empresarial">Dutra Gestão Empresarial</option>
+			<option value="Dutra Previdenciário">Dutra Previdenciário</option>
+		</select>
+		</div>
+		<div id = "col">
+			  <p>Colaboradores</p>
+	  <select id="Colaboradores" name="Colaboradores">
+			<option value="Amanda Allgayer">Amanda Allgayer</option>
+			<option value="Manoela Bernardes">Manoela Bernardes</option>
+			<option value="Tiago Blauth">Tiago Blauth</option>
+			<option value="Amanda Bortoluzzi">Amanda Bortoluzzi</option>
+			<option value="Caroline Brombatti Serini">Caroline Brombatti Serini</option>
+			<option value="Ruan J. C. do Amaral">Ruan J. C. do Amaral</option>
+			<option value="Aline Cardoso de Oliveira">Aline Cardoso de Oliveira</option>
+			<option value="Larissa Castro Lazauskas Yagüe">Larissa Castro Lazauskas Yagüe</option>
+			<option value="Thales Coutinho">Thales Coutinho</option>
+			<option value="Sinara de Mello">Sinara de Mello</option>
+			<option value="Fernanda de Souza">Fernanda de Souza</option>
+			<option value="Don Dutra">Don Dutra</option>
+			<option value="Luisa Martins dos Santos">Luisa Martins dos Santos</option>
+			<option value="Patrícia Fleck">Patrícia Fleck</option>
+			<option value="Ana Paula Gerhardt Gresele">Ana Paula Gerhardt Gresele</option>
+			<option value="Alessandra Ghilardi">Alessandra Ghilardi</option>
+			<option value="Luís Fernando Gieseler Frohlich">Luís Fernando Gieseler Frohlich</option>
+			<option value="Lucas Gil">Lucas Gil</option>
+			<option value="Fernanda Herrmann">Fernanda Herrmann</option>
+			<option value="Mirella Juliano">Mirella Juliano</option>
+			<option value="Daiana Klein">Daiana Klein</option>
+			<option value="Tamires Lamin">Tamires Lamin</option>
+			<option value="Eduarda Lima">Eduarda Lima</option>
+			<option value="Renato Lima">Renato Lima</option>
+			<option value="Leonardo Lisbôa">Leonardo Lisbôa</option>
+			<option value="Gabriela Lorenz">Gabriela Lorenz</option>
+			<option value="Fernanda Luft">Fernanda Luft</option>
+			<option value="Vinicius Martins Dutra">Anny Maron</option>
+			<option value="Monalisa Menezes">Michele Mena</option>
+			<option value="Bruno Miranda">Bruno Miranda</option>
+			<option value="Gustavo Moller Weber">Gustavo Moller Weber</option>
+			<option value="Roseli Moschetta">Roseli Moschetta</option>
+			<option value="Bianca Müller">Bianca Müller</option>
+			<option value="Eric Nazario">Eric Nazario</option>
+			<option value="Thais Oliveira">Thais Oliveira</option>
+			<option value="Rodrigo Oliveira">Rodrigo Oliveira</option>
+			<option value="Pricila Pedrozo">Pricila Pedrozo</option>
+			<option value="Cindy Rocha">Cindy Rocha</option>
+			<option value="Gustavo Rocha">Gustavo Rocha</option>
+			<option value="Thaís Schaab">Thaís Schaab</option>
+			<option value="Eliseu Schenkel da luz">Eliseu Schenkel da luz</option>
+			<option value="Pamela Silva">Pamela Silva</option>
+			<option value="Leocádia Taglieber">Leocádia Taglieber</option>
+			<option value="Franciele Vargas">Franciele Vargas</option>
+			<option value="Lucas Vieira">Lucas Vieira</option>
+			<option value="Tássia Warken da Rosa">Tássia Warken da Rosa</option>
+			<option value="Jonatan Werb">Jonatan Werb</option>
+			<option value="Manoella Wildner">Manoella Wildner</option>
+			<option value="Adilson Wolf">Adilson Wolf</option>
+			<option value="Bianca Feijó">Bianca Feijó</option>
+			<option value="Monalisa Menezes">Monalisa Menezes</option>
+			<option value="Ritiele Fraga">Ritiele Fraga</option>
+			<option value="Pricila Pedrozo">Pricila Pedrozo</option>
+			<option value="Fabiane Schmitz">Fabiane Schmitz</option>
+			<option value="Rafael de Ávila">Rafael de Ávila</option>
+			<option value="Eric Nazario">Eric Nazario</option>
+			<option value="Gustavo Rocha">Gustavo Rocha</option>
+			<option value="Amanda Bortoluzzi">Amanda Bortoluzzi</option>
+			<option value="Fabiane Schmitz">Fabiane Schmitz</option>
+			<option value="Renata Schorn">Renata Schorn</option>
+		</select>
+	</div>	
+		<br><br><br>
+	  <label for="start_date">Data Inicial : </label>
+	  <input type="date" id="start_date" name="start_date" min="2020-01-01"><br><br>
+	  <label for="end_date">Data Final: </label>
+	  <input type="date" id="end_date" name="end_date" min="2020-01-02"><br><br>
+	  <label for="delimiter"> Insira o delimitador para o Excel: </label>
+	  <input type="text" id="delimiter" name="delimiter" value="~"><br>
+	 <br><br>
+	  
+	<div id="id" style="text-align: center"><br><button onclick="checkdate()" id="start" class="hover">Criar Relatório</button>
+	</div><br><br>
+	
+	<div id="output" style="visibility: hidden">
+	<div><strong>Preparando arquivo : </strong><div id="chk" style="color: #B3FFFF"></div></div>
+	<br><br>
+    <div id="name"></div>
+	<div><strong></strong><div id="connection" style="color: #CCFFE6"></div></div>
+	<div id="log"></div>
+	<div id="item"></div>
+	<div>
+	</div>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://api.bitrix24.com/api/v1/" ></script>
+    <script src="scripts.js"></script>
+	
+	
+</body>
+</html>
